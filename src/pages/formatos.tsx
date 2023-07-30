@@ -45,7 +45,11 @@ const Item = ({ nombre, drive }: Formato) => {
 const Formatos = () => {
   return (
     <LayoutPage>
-      <Header />
+      <Header
+        title={"Escuela Superior de Ingeniería y Arquitectura"}
+        main_title={"Unidad Tecamachalco"}
+        image={"/assets/imgs/esia.png"}
+      />
       <h3 className="text-center text-lg font-bold">Formatos</h3>
       <div className="mt-3 px-2">
         {formatos.map((formato) => (

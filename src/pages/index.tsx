@@ -5,7 +5,11 @@ export default function Home() {
   return (
     <LayoutPage>
       <div className="container">
-        <Header />
+        <Header
+          title={"Escuela Superior de Ingeniería y Arquitectura"}
+          main_title={"Unidad Tecamachalco"}
+          image={"/assets/imgs/esia.png"}
+        />
 
         <div className="mt-24 flex flex-col items-center justify-center">
           <button className="block w-48 rounded-full bg-gradient-to-r from-azul to-azul-claro py-[10px] text-sm text-blanco">

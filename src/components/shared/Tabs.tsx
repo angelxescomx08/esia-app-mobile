@@ -17,7 +17,10 @@ export const Tabs = () => {
           alt=""
         />
       </button>
-      <button className="flex w-1/6 items-center justify-center">
+      <button
+        className="flex w-1/6 items-center justify-center"
+        onClick={() => void router.push("emergencias")}
+      >
         <Imagen
           className="aspect-[51/43] w-10"
           src={"/assets/icons/iconos_emergencia_ok.png"}

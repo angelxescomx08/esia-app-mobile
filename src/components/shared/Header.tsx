@@ -1,19 +1,30 @@
 import React from "react";
 import { Imagen } from "./Imagen";
 
-export const Header = () => {
+interface Props {
+  title?: string;
+  main_title?: string;
+  image?: string;
+  classNameImage?: string;
+}
+
+export const Header = ({ title, image, main_title, classNameImage }: Props) => {
   return (
     <div>
-      <h2 className="mt-4 text-center text-base font-bold">
-        Escuela Superior de Ingeniería y Arquitectura
-      </h2>
-      <h2 className="text-center text-lg font-bold">Unidad Tecamachalco</h2>
+      {title && (
+        <h2 className="mt-4 text-center text-base font-bold">{title}</h2>
+      )}
+      {main_title && (
+        <h2 className="text-center text-lg font-bold">{main_title}</h2>
+      )}
 
-      <Imagen
-        className="m-auto mt-4 aspect-[89/140] w-12"
-        src={"/assets/imgs/esia.png"}
-        alt=""
-      />
+      {image && (
+        <Imagen
+          className={`m-auto mt-4 aspect-[89/140] w-12 ${classNameImage}`}
+          src={image}
+          alt=""
+        />
+      )}
     </div>
   );
 };
