@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -16,18 +15,21 @@ export default function Home() {
           </h2>
           <h2 className="text-center text-lg font-bold">Unidad Tecamachalco</h2>
 
-          <div className="relative m-auto mt-4 aspect-[89/140] w-12">
-            <Image src={"/assets/imgs/esia.png"} fill alt="" />
-          </div>
+          {/* eslint-disable-next-line @next/next/no-img-element*/}
+          <img
+            className="m-auto mt-4 aspect-[89/140] w-12"
+            src={"/assets/imgs/esia.png"}
+            alt=""
+          />
 
-          <div className="flex flex-col gap-3 items-center justify-center mt-24">
-            <button className="rounded-full bg-gradient-to-r from-azul to-azul-claro block w-48 py-[10px] text-sm text-blanco">
+          <div className="mt-24 flex flex-col items-center justify-center">
+            <button className="block w-48 rounded-full bg-gradient-to-r from-azul to-azul-claro py-[10px] text-sm text-blanco">
               ALUMNOS
             </button>
-            <button className="rounded-full bg-gradient-to-r from-azul to-azul-claro block w-48 py-[10px] text-sm text-blanco">
+            <button className="block w-48 rounded-full bg-gradient-to-r from-azul to-azul-claro py-[10px] text-sm text-blanco mt-3">
               DOCENTES
             </button>
-            <button className="rounded-full bg-gradient-to-r from-azul to-azul-claro block w-48 py-[10px] text-sm text-blanco">
+            <button className="block w-48 rounded-full bg-gradient-to-r from-azul to-azul-claro py-[10px] text-sm text-blanco mt-3">
               POSGRADO
             </button>
           </div>
