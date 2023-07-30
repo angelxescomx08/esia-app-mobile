@@ -5,3 +5,8 @@
 * {
   font-family: sans-serif !important;
 }
+
+button:active {
+  outline: none;
+  /* Eliminar el borde */
+}
