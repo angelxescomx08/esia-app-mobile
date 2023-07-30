@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,6 +10,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="">
+        <div className="container">
+          <h2 className="mt-4 text-center text-base font-bold">
+            Escuela Superior de Ingeniería y Arquitectura
+          </h2>
+          <h2 className="text-center text-lg font-bold">Unidad Tecamachalco</h2>
+
+          <div className="relative m-auto mt-4 aspect-[89/140] w-12">
+            <Image src={"/assets/imgs/esia.png"} fill alt="" />
+          </div>
+
+          <div className="flex flex-col gap-3 items-center justify-center mt-24">
+            <button className="rounded-full bg-gradient-to-r from-azul to-azul-claro block w-48 py-[10px] text-sm text-blanco">
+              ALUMNOS
+            </button>
+            <button className="rounded-full bg-gradient-to-r from-azul to-azul-claro block w-48 py-[10px] text-sm text-blanco">
+              DOCENTES
+            </button>
+            <button className="rounded-full bg-gradient-to-r from-azul to-azul-claro block w-48 py-[10px] text-sm text-blanco">
+              POSGRADO
+            </button>
+          </div>
+        </div>
       </main>
     </>
   );

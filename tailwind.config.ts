@@ -6,7 +6,9 @@ export default {
     extend: {},
     colors: {
       azul: "#1157A1",
-      gris: "#D4D4D4"
+      gris: "#D4D4D4",
+      "azul-claro": "#729FC9",
+      blanco: "#fff",
     },
   },
   plugins: [],
