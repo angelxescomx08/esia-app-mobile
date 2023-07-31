@@ -9,7 +9,8 @@ export default {
       gris: "#D4D4D4",
       "azul-claro": "#729FC9",
       blanco: "#fff",
-      rojo: "#ED2B2A"
+      rojo: "#ED2B2A",
+      negro: "#000",
     },
   },
   plugins: [],
