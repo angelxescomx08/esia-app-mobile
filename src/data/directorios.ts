@@ -1,6 +1,6 @@
 import { type Directorio } from "~/interfaces";
 
-export const directoriosDireccion: Directorio[] = [
+export const directorioDireccion: Directorio[] = [
   {
     id: "",
     nombre: "M. en A. Carlos Cisneros Araujo",
@@ -38,7 +38,7 @@ export const directoriosDireccion: Directorio[] = [
   },
 ];
 
-export const directoriosSubDireccion: Directorio[] = [
+export const directorioSubDireccion: Directorio[] = [
   {
     id: "",
     nombre: "M. en Arq. Alberto Villanueva Hernández",
@@ -101,5 +101,96 @@ export const directoriosSubDireccion: Directorio[] = [
     correo: "ute_esiatec@ipn.mx",
     cargo: "Jefe de la Unidad de Tecnología Educativa y Campus Virtual",
     extencion: 68088,
+  },
+];
+
+export const directorioSubdireccionAdministrativa: Directorio[] = [
+  {
+    id: "",
+    nombre: "Ing. Arq. Raúl Vázquez Cruz",
+    correo: "rvazquezcr@ipn.mx",
+    cargo: "Subdirector Administrativo",
+    extencion: 46337,
+  },
+  {
+    id: "",
+    nombre: "Área Secretarial",
+    correo: "-",
+    cargo: "Secretarial",
+    extencion: 68037,
+  },
+  {
+    id: "",
+    nombre: "Ing. Arq. Hector Manuel Galván Alcocer",
+    correo: "hgalvana@ipn.mx",
+    cargo: "Jefe de Departamento de Capital Humano",
+    extencion: 68040,
+  },
+  {
+    id: "",
+    nombre: "C.P. Jacobo Gonzáles Ciplina",
+    correo: "jgonzalezci@ipn.mx",
+    cargo: "Jefe de Departamento de Recursos Financieros",
+    extencion: 68038,
+  },
+  {
+    id: "",
+    nombre: "Ing. Arq. Juan Chávez Flores",
+    correo: "avillagranc@ipn.mx, rm_esiatec@ipn.mx",
+    cargo: "Jefe de Departamento de Recursos Materiales",
+    extencion: 46336,
+  },
+  {
+    id: "",
+    nombre: "Ing. Arq. Arturo Paez Ramírez",
+    correo: "apaezr@ipn.mx",
+    cargo: "Jefe del Departamento de Mantenimiento y Servicios",
+    extencion: 68100,
+  },
+];
+
+export const directorioSubdireccionServiciosEducativos: Directorio[] = [
+  {
+    id: "",
+    nombre: "Lic. Gomer Cruz Carbajal",
+    correo: "-",
+    cargo: "Subdirector de Servicios Educativos e Intregración Social",
+    extencion: 46338,
+  },
+  {
+    id: "",
+    nombre: "Área Secretarial",
+    correo: "-",
+    cargo: "Secretarial",
+    extencion: 68044,
+  },
+  {
+    id: "",
+    nombre: "M. en E. Jesús Carlos Hernández Cruz",
+    correo: "-",
+    cargo: "Jefe del Departamento de Extensión y Apoyos Educativos",
+    extencion: 68045,
+  },
+  {
+    id: "",
+    nombre: "Lic. Lorena Lozoya Saldaña",
+    correo: "llozoya@ipn.mx",
+    cargo: "Jefa Servicios Estudiantiles",
+    extencion: 68049,
+  },
+  {
+    id: "",
+    nombre: "M. en PAU Sergio Villegas García",
+    correo: "svillegaz@ipn.mx, arq.villegas@gmail.com",
+    cargo: "Jefe de la Unidad Politécnica de Integración Social",
+    extencion: 68056,
+  },
+  {
+    id: "",
+    nombre: "Adriana Valdivia Domínguez",
+    correo:
+      "avaldiviad@ipn.mx, gescolar_esiatec@hotmail.com, gescolar-esiatec@ipn.mx",
+    cargo: "Jefa de Gestión Escolar",
+    extencion: 68073,
   },
 ];
