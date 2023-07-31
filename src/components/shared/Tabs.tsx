@@ -27,7 +27,10 @@ export const Tabs = () => {
           alt=""
         />
       </button>
-      <button className="flex w-1/6 items-center justify-center">
+      <button
+        className="flex w-1/6 items-center justify-center"
+        onClick={() => void router.push("/directorio")}
+      >
         <Imagen
           className="aspect-square w-10"
           src={"/assets/icons/iconos_directorio_ok.png"}

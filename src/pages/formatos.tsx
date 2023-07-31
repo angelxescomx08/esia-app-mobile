@@ -19,7 +19,7 @@ const Item = ({ nombre, drive }: Formato) => {
   };
 
   return (
-    <div className="mb-4 flex items-center justify-between rounded-2xl bg-blanco px-3 py-5 shadow-md">
+    <div className="container m-auto mb-4 flex items-center justify-between rounded-2xl bg-blanco px-3 py-5 shadow-md">
       <p className="text-sm">{nombre}</p>
       <div className="flex items-center">
         <button onClick={onClick}>

@@ -30,7 +30,7 @@ const Emergencias = () => {
         classNameImage="aspect-square w-24"
       />
 
-      <div className="mt-6 px-6">
+      <div className="mt-6 px-6 container m-auto">
         <div>
           <p className="text-sm">
             Responsable: Ing. Arq. Tonatiuh Santiago Pablo

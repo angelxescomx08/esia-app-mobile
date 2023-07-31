@@ -4,7 +4,7 @@ import { LayoutPage } from "~/layouts";
 export default function Home() {
   return (
     <LayoutPage>
-      <div className="container">
+      <div className="container m-auto">
         <Header
           title={"Escuela Superior de Ingeniería y Arquitectura"}
           main_title={"Unidad Tecamachalco"}
