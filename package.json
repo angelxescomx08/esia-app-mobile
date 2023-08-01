@@ -26,6 +26,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@capacitor/assets": "^2.0.4",
     "@capacitor/cli": "^5.2.2",
     "@types/eslint": "^8.37.0",
     "@types/node": "^18.16.0",
