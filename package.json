@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@capacitor/android": "^5.2.2",
+    "@capacitor/app": "^5.0.6",
     "@capacitor/clipboard": "^5.0.6",
     "@capacitor/core": "^5.2.2",
     "@capacitor/ios": "^5.2.2",
@@ -23,6 +24,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
+    "react-use-measure": "^2.1.1",
     "zod": "^3.21.4"
   },
   "devDependencies": {

@@ -4,3 +4,4 @@ export * from "./Imagen";
 export * from "./CustomModal";
 export * from "./TextDivider";
 export * from "./DirectorioCard";
+export * from "./Collapse";
