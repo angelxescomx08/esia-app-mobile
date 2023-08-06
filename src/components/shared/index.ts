@@ -6,3 +6,4 @@ export * from "./TextDivider";
 export * from "./DirectorioCard";
 export * from "./Collapse";
 export * from "./Buttons";
+export * from "./BarraAzul";

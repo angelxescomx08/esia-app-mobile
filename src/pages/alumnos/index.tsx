@@ -1,6 +1,6 @@
 import { useDisclosure } from "@mantine/hooks";
 import { useRouter } from "next/router";
-import { BlueButton, CustomModal, Imagen } from "~/components";
+import { BlueButton, CustomModal } from "~/components";
 import { LayoutMenu } from "~/layouts";
 
 const AlumnoPage = () => {
@@ -30,9 +30,7 @@ const AlumnoPage = () => {
         <div className="col-span-1 mb-4 text-center">
           <BlueButton
             className="w-4/5"
-            onClick={() => {
-              console.log("click");
-            }}
+            onClick={() => void router.push("/alumnos/tramites-escolares")}
           >
             Trámites <br /> Escolares
           </BlueButton>
