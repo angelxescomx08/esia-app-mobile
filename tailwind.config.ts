@@ -12,6 +12,7 @@ export default {
       rojo: "#ED2B2A",
       negro: "#000",
       "gris-oscuro": "#616161",
+      "azul-botones": "#AAC4DF",
     },
   },
   plugins: [],

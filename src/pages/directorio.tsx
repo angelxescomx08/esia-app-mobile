@@ -1,6 +1,6 @@
 import { TextInput } from "@mantine/core";
 import { useDebouncedValue } from "@mantine/hooks";
-import React, { useState } from "react";
+import { useState } from "react";
 import { DirectorioCard, TextDivider } from "~/components";
 import {
   directorioDireccion,
@@ -14,7 +14,7 @@ const Directorio = () => {
   const [searchDebounced] = useDebouncedValue(searchTerm, 400);
 
   return (
-    <div className="container m-auto  px-5">
+    <div className="container m-auto px-5">
       <h3 className="mt-7 text-center text-2xl font-bold">Directorio</h3>
       <TextInput
         value={searchTerm}

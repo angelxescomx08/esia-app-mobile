@@ -1,7 +1,10 @@
+import { useRouter } from "next/router";
 import { Header } from "~/components";
 import { LayoutPage } from "~/layouts";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <LayoutPage>
       <div className="container m-auto">
@@ -12,7 +15,10 @@ export default function Home() {
         />
 
         <div className="mt-24 flex flex-col items-center justify-center">
-          <button className="block w-48 rounded-full bg-gradient-to-r from-azul to-azul-claro py-[10px] text-sm text-blanco">
+          <button
+            onClick={() => void router.push("/alumnos")}
+            className="block w-48 rounded-full bg-gradient-to-r from-azul to-azul-claro py-[10px] text-sm text-blanco"
+          >
             ALUMNOS
           </button>
           <button className="mt-3 block w-48 rounded-full bg-gradient-to-r from-azul to-azul-claro py-[10px] text-sm text-blanco">
