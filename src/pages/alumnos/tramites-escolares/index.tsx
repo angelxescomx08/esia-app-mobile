@@ -1,11 +1,16 @@
+import { useRouter } from "next/router";
 import { BarraAzul, ButtonNext } from "~/components";
 
 const TramitesEscolares = () => {
+  const router = useRouter();
+
   return (
     <div className="container m-auto pb-8">
       <BarraAzul
         texto="Departamento de Formación Básica Disciplinaria"
-        onVerMas={() => console.log("")}
+        onVerMas={() =>
+          void router.push("/alumnos/tramites-escolares/tramites-dos")
+        }
       >
         <p className="px-2 py-4 text-sm leading-4">
           Jefe de Departamento: Ing. Arq. Juan Hernández Flores
@@ -63,7 +68,11 @@ const TramitesEscolares = () => {
       </BarraAzul>
 
       <div className="flex justify-end px-2">
-        <ButtonNext />
+        <ButtonNext
+          onClick={() =>
+            void router.push("/alumnos/tramites-escolares/tramites-dos")
+          }
+        />
       </div>
     </div>
   );

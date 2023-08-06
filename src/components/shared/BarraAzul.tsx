@@ -1,4 +1,4 @@
-import { type PropsWithChildren } from "react";
+import { type ComponentProps, type PropsWithChildren } from "react";
 import { ButtonVerMas } from "./Buttons/ButtonVerMas";
 
 interface Props {
@@ -10,9 +10,10 @@ export const BarraAzul = ({
   texto,
   onVerMas,
   children,
-}: PropsWithChildren<Props>) => {
+  ...rest
+}: PropsWithChildren<Props> & ComponentProps<"div">) => {
   return (
-    <div>
+    <div {...rest}>
       <div className="flex select-none items-center justify-between bg-azul py-1">
         <p className="w-full text-center text-sm font-bold text-blanco">
           {texto}
