@@ -1,4 +1,3 @@
-import React from "react";
 import { Imagen } from "./Imagen";
 import { useRouter } from "next/router";
 import { useDisclosure } from "@mantine/hooks";

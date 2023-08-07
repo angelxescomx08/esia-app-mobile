@@ -62,9 +62,7 @@ const AlumnoPage = () => {
         <div className="col-span-1 mb-4 text-center">
           <BlueButton
             className="w-4/5"
-            onClick={() => {
-              console.log("click");
-            }}
+            onClick={() => void router.push("/alumnos/apoyo-estudiantil")}
           >
             Apoyo <br /> Estudiantil
           </BlueButton>
@@ -82,9 +80,12 @@ const AlumnoPage = () => {
         <div className="col-span-2 mb-4 text-center">
           <BlueButton
             className="w-3/5"
-            onClick={() => {
-              console.log("click");
-            }}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1__ZprHFRzmTOc9ggsdHjdVUVvhXnWHdc/view?usp=share_link",
+                "_blank"
+              )
+            }
           >
             Planos Oficiales
           </BlueButton>
