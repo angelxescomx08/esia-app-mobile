@@ -1,4 +1,3 @@
-import { ButtonNext } from "~/components";
 import { ButtonVerMas } from "~/components/shared/Buttons/ButtonVerMas";
 
 const ServicioSocialTres = () => {
