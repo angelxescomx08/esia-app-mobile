@@ -38,9 +38,7 @@ const AlumnoPage = () => {
         <div className="col-span-1 mb-4 text-center">
           <BlueButton
             className="w-4/5"
-            onClick={() => {
-              console.log("click");
-            }}
+            onClick={() => void router.push("/alumnos/servicio-social")}
           >
             Servicio <br /> Social
           </BlueButton>
