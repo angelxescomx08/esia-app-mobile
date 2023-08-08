@@ -19,7 +19,12 @@ const Posgrado = () => {
         >
           Programas
         </BlueButton>
-        <BlueButton className="mb-10 w-44 max-w-full py-5">Alumnos</BlueButton>
+        <BlueButton
+          className="mb-10 w-44 max-w-full py-5"
+          onClick={() => void router.push("/alumnos/posgrado/alumnos")}
+        >
+          Alumnos
+        </BlueButton>
         <BlueButton className="mb-10 w-44 max-w-full py-5">
           Profesores
         </BlueButton>
