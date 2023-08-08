@@ -14,7 +14,7 @@ export const BarraAzul = ({
 }: PropsWithChildren<Props> & ComponentProps<"div">) => {
   return (
     <div {...rest}>
-      <div className="flex select-none items-center justify-between bg-azul py-1">
+      <div className="flex select-none items-center justify-between bg-azul py-2">
         <p className="w-full text-center text-sm font-bold text-blanco">
           {texto}
         </p>
