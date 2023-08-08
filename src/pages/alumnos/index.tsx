@@ -70,9 +70,7 @@ const AlumnoPage = () => {
         <div className="col-span-1 mb-4 text-center">
           <BlueButton
             className="h-full w-4/5"
-            onClick={() => {
-              console.log("click");
-            }}
+            onClick={() => void router.push("/alumnos/posgrado")}
           >
             Posgrado
           </BlueButton>

@@ -6,7 +6,6 @@ import { App } from "@capacitor/app";
 
 export const Tabs = () => {
   const router = useRouter();
-
   const [opened, { open, close }] = useDisclosure(false);
 
   const onAceptar = () => {
@@ -20,7 +19,7 @@ export const Tabs = () => {
     <div>
       <div className="flex h-12 w-full justify-evenly bg-azul">
         <button
-          className="flex w-1/6 items-center justify-center"
+          className="relative flex w-1/6 items-center justify-center"
           onClick={() => void router.push("formatos")}
         >
           <Imagen
@@ -64,8 +63,8 @@ export const Tabs = () => {
           onClick={() => void router.push("/")}
         >
           <Imagen
-            className="aspect-[14/47] h-10"
-            src={"/assets/icons/iconos_menu_ok.png"}
+            className="aspect-square w-4/5"
+            src={"/assets/icons/menu.png"}
             alt=""
           />
         </button>
