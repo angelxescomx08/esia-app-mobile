@@ -63,7 +63,7 @@ export const Tabs = () => {
           onClick={() => void router.push("/")}
         >
           <Imagen
-            className="aspect-square w-4/5"
+            className="aspect-square w-4/5 max-w-[50px]"
             src={"/assets/icons/menu.png"}
             alt=""
           />
@@ -82,7 +82,7 @@ export const Tabs = () => {
       <CustomModal open={opened} onClose={close}>
         <div className="px-4">
           <h3 className="text-center font-medium">ESIA TECAMACHALCO</h3>
-
+          <p className="text-center text-xs">¿Desea salir de la aplicación?</p>
           <div className="mt-3 flex items-center justify-between py-3">
             <button
               className="rounded-full border-2 border-negro px-6 py-2 font-semibold"

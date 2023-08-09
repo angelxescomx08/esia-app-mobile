@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { BlueButton, CustomModal } from "~/components";
 import { LayoutMenu } from "~/layouts";
 
-const AlumnoPage = () => {
+const DocentesPage = () => {
   const router = useRouter();
   const [opened, { open, close }] = useDisclosure(false);
 
@@ -15,48 +15,8 @@ const AlumnoPage = () => {
     <LayoutMenu>
       <div className="mt-12 grid grid-cols-2">
         <div className="col-span-1 mb-4 text-center">
-          <BlueButton className="w-[135px] max-w-full" onClick={open}>
+          <BlueButton className="h-full w-[135px] max-w-full" onClick={open}>
             SAES
-          </BlueButton>
-        </div>
-        <div className="col-span-1 mb-4 text-center">
-          <BlueButton
-            className="w-[135px] max-w-full"
-            onClick={() => void router.push("/alumnos/becas")}
-          >
-            Becas
-          </BlueButton>
-        </div>
-        <div className="col-span-1 mb-4 text-center">
-          <BlueButton
-            className="w-[135px] max-w-full"
-            onClick={() => void router.push("/alumnos/tramites-escolares")}
-          >
-            Trámites <br /> Escolares
-          </BlueButton>
-        </div>
-        <div className="col-span-1 mb-4 text-center">
-          <BlueButton
-            className="w-[135px] max-w-full"
-            onClick={() => void router.push("/alumnos/servicio-social")}
-          >
-            Servicio <br /> Social
-          </BlueButton>
-        </div>
-        <div className="col-span-1 mb-4 text-center">
-          <BlueButton
-            className="w-[135px] max-w-full"
-            onClick={() => void router.push("/alumnos/practicas-profesionales")}
-          >
-            Prácticas <br /> Profesionales
-          </BlueButton>
-        </div>
-        <div className="col-span-1 mb-4 text-center">
-          <BlueButton
-            className="w-[135px] max-w-full"
-            onClick={() => void router.push("/alumnos/opciones-titulacion")}
-          >
-            Opciones de <br /> Titulación
           </BlueButton>
         </div>
         <div className="col-span-1 mb-4 text-center">
@@ -75,9 +35,9 @@ const AlumnoPage = () => {
             Posgrado
           </BlueButton>
         </div>
-        <div className="col-span-2 mb-4 text-center">
+        <div className="col-span-1 mb-4 text-center">
           <BlueButton
-            className="w-[200px] max-w-full"
+            className="w-[135px] max-w-full"
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1__ZprHFRzmTOc9ggsdHjdVUVvhXnWHdc/view?usp=share_link",
@@ -116,4 +76,4 @@ const AlumnoPage = () => {
   );
 };
 
-export default AlumnoPage;
+export default DocentesPage;
