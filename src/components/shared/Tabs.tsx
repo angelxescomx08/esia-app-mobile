@@ -1,6 +1,7 @@
 import { Imagen } from "./Imagen";
 import { useRouter } from "next/router";
 import { useDisclosure } from "@mantine/hooks";
+import { Capacitor } from "@capacitor/core";
 import { CustomModal } from "./CustomModal";
 import { App } from "@capacitor/app";
 
@@ -9,9 +10,14 @@ export const Tabs = () => {
   const [opened, { open, close }] = useDisclosure(false);
 
   const onAceptar = () => {
-    close();
-    if (App) {
-      void App.exitApp();
+    if (Capacitor.isNativePlatform()) {
+      close();
+      if (App) {
+        void App.exitApp();
+      }
+    } else {
+      console.log("Salida exitosa");
+      close();
     }
   };
 
