@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 export const MainLayout = ({ children }: PropsWithChildren) => {
   const router = useRouter();
   return (
-    <div className="h-screen w-full">
+    <div className="h-screen w-full overflow-hidden">
       <div
         className="overflow-y-scroll bg-gris"
         style={{

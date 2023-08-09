@@ -22,69 +22,64 @@ export const Tabs = () => {
   };
 
   return (
-    <div>
-      <div className="flex h-12 w-full justify-evenly bg-azul">
-        <button
-          className="relative flex w-1/6 items-center justify-center"
-          onClick={() => void router.push("formatos")}
-        >
-          <Imagen
-            className="aspect-[37/49] h-10"
-            src={"/assets/icons/iconos_formatos_ok.png"}
-            alt=""
-          />
-        </button>
-        <button
-          className="flex w-1/6 items-center justify-center"
-          onClick={() => void router.push("emergencias")}
-        >
-          <Imagen
-            className="aspect-[51/43] w-10"
-            src={"/assets/icons/iconos_emergencia_ok.png"}
-            alt=""
-          />
-        </button>
-        <button
-          className="flex w-1/6 items-center justify-center"
-          onClick={() => void router.push("/directorio")}
-        >
-          <Imagen
-            className="aspect-square w-10"
-            src={"/assets/icons/iconos_directorio_ok.png"}
-            alt=""
-          />
-        </button>
-        <button
-          className="flex w-1/6 items-center justify-center"
-          onClick={() => void router.push("/rutas")}
-        >
-          <Imagen
-            className="aspect-[32/47] h-10"
-            src={"/assets/icons/iconos_ubicacion_ok.png"}
-            alt=""
-          />
-        </button>
-        <button
-          className="flex w-1/6 items-center justify-center"
-          onClick={() => void router.push("/")}
-        >
-          <Imagen
-            className="aspect-square w-4/5 max-w-[50px]"
-            src={"/assets/icons/menu.png"}
-            alt=""
-          />
-        </button>
-        <button
-          className="flex w-1/6 items-center justify-center"
-          onClick={open}
-        >
-          <Imagen
-            className="aspect-square w-10"
-            src={"/assets/icons/iconos_salida_ok.png"}
-            alt=""
-          />
-        </button>
-      </div>
+    <div className="flex h-12 w-full justify-evenly bg-azul">
+      <button
+        className="relative flex w-1/6 items-center justify-center"
+        onClick={() => void router.push("formatos")}
+      >
+        <Imagen
+          className="aspect-[37/49] h-10"
+          src={"/assets/icons/iconos_formatos_ok.png"}
+          alt=""
+        />
+      </button>
+      <button
+        className="flex w-1/6 items-center justify-center"
+        onClick={() => void router.push("emergencias")}
+      >
+        <Imagen
+          className="aspect-[51/43] w-10"
+          src={"/assets/icons/iconos_emergencia_ok.png"}
+          alt=""
+        />
+      </button>
+      <button
+        className="flex w-1/6 items-center justify-center"
+        onClick={() => void router.push("/directorio")}
+      >
+        <Imagen
+          className="aspect-square w-10"
+          src={"/assets/icons/iconos_directorio_ok.png"}
+          alt=""
+        />
+      </button>
+      <button
+        className="flex w-1/6 items-center justify-center"
+        onClick={() => void router.push("/rutas")}
+      >
+        <Imagen
+          className="aspect-[32/47] h-10"
+          src={"/assets/icons/iconos_ubicacion_ok.png"}
+          alt=""
+        />
+      </button>
+      <button
+        className="flex w-1/6 items-center justify-center"
+        onClick={() => void router.push("/")}
+      >
+        <Imagen
+          className="aspect-square w-4/5 max-w-[50px]"
+          src={"/assets/icons/menu.png"}
+          alt=""
+        />
+      </button>
+      <button className="flex w-1/6 items-center justify-center" onClick={open}>
+        <Imagen
+          className="aspect-square w-10"
+          src={"/assets/icons/iconos_salida_ok.png"}
+          alt=""
+        />
+      </button>
       <CustomModal open={opened} onClose={close}>
         <div className="px-4">
           <h3 className="text-center font-medium">ESIA TECAMACHALCO</h3>
