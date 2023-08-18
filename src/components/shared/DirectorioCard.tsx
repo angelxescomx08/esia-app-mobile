@@ -5,8 +5,9 @@ import { type Directorio } from "~/interfaces";
 export const DirectorioCard = ({
   cargo,
   correo,
-  extencion,
+  extension,
   nombre,
+  secretario_extension,
 }: Directorio) => {
   return (
     <div className="mb-5 rounded-lg bg-blanco p-4 shadow-xl">
@@ -49,7 +50,9 @@ export const DirectorioCard = ({
           <p className="text-sm">{cargo}</p>
         </div>
       </div>
-      <div className="grid grid-cols-12">
+      <div
+        className={`${secretario_extension ? "mb-4" : ""} grid grid-cols-12`}
+      >
         <div className="col-span-5 flex items-center">
           <Imagen
             className="mr-1 aspect-square w-5 text-blanco"
@@ -59,9 +62,25 @@ export const DirectorioCard = ({
           <p className="text-sm">Extensión</p>
         </div>
         <div className="col-span-7">
-          <p className="text-sm">{extencion}</p>
+          <p className="text-sm">{extension}</p>
         </div>
       </div>
+
+      {secretario_extension ? (
+        <div className="grid grid-cols-12">
+          <div className="col-span-5 flex items-center">
+            <Imagen
+              className="mr-1 aspect-square w-5 text-blanco"
+              src="/assets/icons/secretary.png"
+              alt=""
+            />
+            <p className="text-sm leading-4">Secretario particular</p>
+          </div>
+          <div className="col-span-7">
+            <p className="text-sm">{secretario_extension}</p>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 };

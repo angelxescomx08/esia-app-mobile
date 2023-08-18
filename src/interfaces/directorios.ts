@@ -3,5 +3,6 @@ export interface Directorio {
   nombre: string;
   correo: string;
   cargo: string;
-  extencion: number | "No aplica";
+  extension: number | "No aplica";
+  secretario_extension?: number;
 }
